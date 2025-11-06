@@ -1,0 +1,7 @@
+<!-- @for (faceSnap of faceSnaps; track faceSnap.title) {
+    <app-face-snap [faceSnap]="faceSnap"/>
+} -->
+
+<div *ngFor="let faceSnap of faceSnaps; trackBy: trackByTitle">
+  <app-face-snap [faceSnap]="faceSnap"></app-face-snap>
+</div>
